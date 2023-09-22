@@ -1,0 +1,48 @@
+header {
+    background-color: #00b7ff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #76158a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+article {
+    background-image: url('https://c8.alamy.com/compes/jx5wgk/alfabeto-de-antiguedades-letras-goticas-vintage-fuente-dibujados-a-mano-vector-grunge-letras-occidentales-jx5wgk.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Esta propiedad ajusta el tamaño de la imagen para que cubra todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #9dc246;
+}
+
+section {
+    background-color: #93cf98;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #f1a9a9;
+}
+
+footer {
+    background-color: #c90ea0;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+aside {
+    background-color: #819bf0;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.d-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}

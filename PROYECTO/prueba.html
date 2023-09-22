@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Wikipedia®</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light ">
+    <div class="col-sm-3">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="./imagenes/logo.png" alt="" width="200" />
+    </div>
+
+    <div class="col-sm-4 justify-content-start">
+      <form class="d-flex justify-content-start">
+        <input class="form-control me-2" type="search" placeholder="Buscar en Wikipedia" aria-label="Search" />
+        <button class="btn btn-outline-success" type="submit">
+          Buscar
+        </button>
+      </form>
+    </div>
+    <div class="col-sm-4">
+      <nav class="nav justify-content-end">
+        <a class="nav-link active" aria-current="page" href="#">Crear una cuenta</a>
+        <a class="nav-link" href="#">Acceder</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">...</a>
+      </nav>
+    </div>
+
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+              role="tab" aria-controls="profile" aria-selected="false">Portada</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+              role="tab" aria-controls="contact" aria-selected="false">Discusión</button>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-8 dercha">
+        <ul class="nav nav-tabs " id="myTab" role="tablist">
+          <li class="nav-item " role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+              role="tab" aria-controls="contact" aria-selected="false">Leer</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+              role="tab" aria-controls="contact" aria-selected="false">Ver código fuente</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+              role="tab" aria-controls="contact" aria-selected="false">Ver historial</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+              role="tab" aria-controls="contact" aria-selected="false">Discusión</button>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">Herramientas</a>
+            <ul class="dropdown-menu">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">General</div>
+                    Lo que enlaza aquí
+                    Cambios enlazados
+                    Subir archivos
+                    Páginas especiales
+                    Enlace permanente
+                    Información de la página
+                    Elementos de Wikidata
+                  </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Imprimir/exportar</div>
+                    Crear un libro
+                    Descargar como PDF
+                    Versión para imprimir 
+                  </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">En otros proyectos</div>
+                    Wikimedia Commons
+                    MediaWiki
+                    Meta-Wiki
+                    Wikisource multilingüe
+                    Wikispecies
+                    Wikilibros
+                    Wikidata
+                    Wikimania
+                    Wikinoticias
+                    Wikiquote
+                    Wikisource
+                    Wikiuniversidad
+                    Wikiviajes
+                    Wikcionario
+                  </div>
+                </li>
+              </ol>
+            </ul>
+          </li>
+        </ul>        
+      </div>
+      <div class="col-sm-12">
+        <article>
+          <h2>
+            <span style="color: blue;">Bienvenidos</span>
+            <span style="color: black;">a Wikipedia,</span>
+         </h2>
+          <h4>la enclicopedia de contenido libre</h4>
+          <p class="text-m" style="color: blue;">
+            que <a href="#" class="text-reset">todos pueden editar</a>.
+         </p>
+         
+         <div style="display: flex; flex-direction: column; align-items: flex-end;">
+          <a href="#" class="btni" style="color: black;"><strong>1 892 985 artículos en español.</strong></a>
+          <div style="display: flex; justify-content: flex-end;">
+              <a href="#" class="btni" style="margin-right: 10px; color: black;">Contacto</a>
+              <a href="#" class="btni" style="margin-right: 10px; color: black;">Ayuda</a>
+              <a href="#" class="btni" style="margin-right: 10px; color: black;">Primeros pasos</a>
+              <a href="#" class="btni" style="margin-right: 10px; color: black;">¿Cómo colaborar?</a>
+              <a href="#" class="btni" style="color: black;">Café</a>
+          </div>
+      </div>
+      
+        
+        
+        
+        
+        
+      </article>
+      </div>
+      <div class="d-grid">
+        <article1>
+          <p class="fw-light">Artículo destacado</p>
+          <p class="fw-bolder">I'll Remember</p>
+          <img src="./imagenes//Madonna.jpg" class="float-end" width="200" height="200" />
+          <p class="fw-normal">
+            «I'll Remember» es una canción interpretada por la cantante
+            estadounidense Madonna, incluida en la banda sonora de la película
+            With Honors (1994), dirigida por Alek Keshishian y protagonizada
+            por Brendan Fraser y Joe Pesci. Fue compuesta por Patrick Leonard
+            y Richard Page —fundador y vocalista de la banda Mr. Mister—
+            durante las sesiones de grabación del primer y único álbum de
+            estudio de 3rd Matinee, el proyecto musical que ambos formaron en
+            1994. Mientras tanto, Madonna, que pasaba por un momento
+            desfavorable en su carrera artística tras las polémicas generadas
+            con sus últimos proyectos, comprendió que debía suavizar su imagen
+            para volver a conectar con su público. Cuando Keshishian le
+            solicitó que contribuyera con una canción original para la banda
+            sonora de With Honors, se reunió con Page y Leonard, quien había
+            hecho la música del filme, y le presentaron «I'll Remember». A
+            Madonna le gustó cuando la escuchó por primera vez y añadió
+            algunas partes, por lo que recibió créditos como coautora. De esta
+            manera, sirvió como el tema principal de la cinta y apareció en
+            los créditose id="finalito"s. La producción estuvo a cargo de Madonna y
+            Leonard. «I'll Remember» marcó un cambio radical en comparación
+            con el sonido deep house de Erotica (1992), su último álbum de
+            estudio. En este sentido, es una canción de amor pop de tempo
+            medio, compuesta al estilo de un tema de AOR similar al trabajo de
+            bandas como Boston y Foreigner. La letra trata sobre una ruptura y
+            recuerda una «buena historia de amor». La prensa notó que el
+            lanzamiento del tema representó un intento de Madonna de mejorar
+            su imagen tras las polémicas de sus últimos proyectos.​ En los
+            Estados Unidos, las compañías Maverick, Sire y Warner Bros.
+            Records lo publicaron como el sencillo principal de la banda
+            sonora de With Honors el 1 de marzo de 1994, mientras que, en
+            Australia y Europa, salió a la venta una semana después​. Para
+            acompañar el lanzamiento físico, ​el productor William Orbit​ creó
+            una serie de remezclas orientadas a la música hip hop y trance. En
+            noviembre del año siguiente, «I'll Remember» se incluyó en el
+            recopilatorio de baladas Something to Remember (1995), con lo cual
+            marcó la primera vez que la canción figuraba en un álbum de
+            Madonna.
+            Madonna Louise Ciccone1​ (Bay City, Míchigan; 16 de agosto de 1958), conocida simplemente como Madonna, es una cantante, bailarina, compositora, actriz, empresaria e icono estadounidense.
+
+Madonna pasó su infancia en Bay City y en 1978 se mudó a la ciudad de Nueva York para realizar una carrera de danza contemporánea. Después de participar en dos grupos musicales, Breakfast Club y Emmy, en 1982 firmó con Sire Records (filial de Warner Bros.) y lanzó su álbum debut Madonna al año siguiente. Siguió publicando una serie de álbumes en los que encontró una inmensa popularidad, superó los límites de contenido de las letras de sus canciones y explotó las imágenes en sus vídeos musicales, que a lo largo de su carrera se han convertido en piezas de arte.2​ Muchas de sus canciones alcanzaron el número uno en las listas musicales de varios países alrededor del mundo; sus mayores éxitos incluyen temas como «Like a Virgin», «Material Girl», «Papa Don't Preach», «La isla bonita», «Like a Prayer», «Express Yourself», «Vogue», «Take a Bow», «Frozen», «Music», «Hung Up» y «4 Minutes». Madonna ha sido elogiada por los críticos por sus producciones musicales y puestas en escena, dándole el título de la «Reina del Pop».3​
+
+Su carrera ha sido reforzada por sus papeles en diversas películas por las que recibió comentarios variados. Su protagónico más elogiado es el de Eva Perón para Evita (1996), por el que incluso ganó un Globo de Oro a la mejor actriz de comedia o musical; sin embargo, ha recibido críticas negativas por otros papeles.4​ Otras ocupaciones de Madonna incluyen ser diseñadora de moda, escritora de libros, directora de cine y productora discográfica, además de que es dueña del sello discográfico Maverick. También es una aclamada empresaria, y en 2007 firmó un contrato de 120 millones de dólares con Live Nation.5​
+
+Madonna ha vendido más de 300 millones de producciones musicales, con lo que establece el récord mundial de «la solista más exitosa y de mayores ventas musicales de todos los tiempos», incluido en el Libro Guinness de los récords.6​ Según la Recording Industry Association of America (RIAA) es la solista con mayores ventas del siglo xx, y la tercera con mayores ventas en Estados Unidos (detrás de Barbra Streisand y Mariah Carey) con 64.5 millones de álbumes certificados.7​ En el Reino Unido, es la solista femenina con mayores ventas de sencillos en la historia, con 17,6 millones para junio de 2012.8​
+
+
+          </p>
+          <button id="sinformato" type="button">
+            <p class="fw-bolder">Leer</p>
+          </button> Todos los articulos son buenos
+        </article1>
+        <aside>
+          <h2>Actualidad</h2>
+          <ul>
+            <li>
+              <p class="text-muted">
+                <a href="#" class="text-reset"> Invasión rusa de Ucrania</a>.
+              </p>
+            <li>
+              <p>
+              <a href="#"> Crisis de Níger</a>
+            </p>
+            <li>
+              <p><a href="#" >Tercera guerra civil sudanesa</a></p>
+            <li>
+              <p><a href="#" >Tormenta Daniel</a></p>
+
+            <li>
+              <p><a href="#" >16-24 de septiembre: Torneo de Clasificación Olímpica de Voleibol Femenino</a></p>
+
+            <li>
+              <p><a href="#" >16-24 de septiembre: Campeonato Europeo de Lucha</a></p>
+              
+
+            <li>
+              <p><a href="#" >15-17 de septiembre: Gran Premio de Singapur de Fórmula 1</a></p>
+
+            <li>
+              <p><a href="#" >12-17 de septiembre: Fase de grupos de la Copa Davis</a></p>
+            <li>
+              <p><a href="#" >11-17 de septiembre: Masters de Shanghái de snooker</a></p>
+            <li>
+             <p><a href="#" >7-17 de septiembre: Festival de Cine de Toronto</a></p>
+            <li>
+              <p><a href="#" >28 de agosto-16 de septiembre: Campeonato Europeo de Voleibol Masculino</a></p>
+            <li>
+              <p><a href="#" >8 de septiembre-28 de octubre: Copa Mundial de Rugby</a></p>
+         <h7>Fallecimientos</h7>
+         <li>
+          <p><a href="#" >15 de septiembre: Gato Peters, humorista argentino (68)/a></p>
+
+        <li>
+          <p><a href="#" >15 de septiembre: Vanessa Show, actriz argentina (72; en la imagen superior)</a></p> 
+          
+          
+        <li>
+          <p><a href="#" >15 de septiembre: Fernando Botero, pintor y escultor colombiano (91)</a></p>
+
+        <li>
+          <p><a href="#" >14 de septiembre: Antoni Vila Casas, empresario español (92; en la image inferior)</a></p>
+
+          <span class="image-text">
+            <img src="./imagenes/felleciminto1.jpg" width="100"  style="float: right ; margin-left: 10px;"/>
+        </span>
+        <li>
+          <p><a href="#" >14 de septiembre: Bjarni Felixson, futbolista y comentarista deportivo islandés (86)</a></p>
+        <li>
+         <p><a href="#" >14 de septiembre: Roy Roper, jugador de rugby neozelandés (100)</a></p>
+        <li>
+          <p><a href="#" >14 de septiembre: Raúl Silanes, escritor argentino (64)</a></p>
+        <li>
+          <p><a href="#" >13 de septiembre: John McDonald, jugador, entrenador y dirigente de rugby australiano (79)</a></p>
+          <span class="image-text">
+            <img src="./imagenes/felleciminto2.jpg" width="100"  style="float: right ; margin-left: 10px;"/>
+        </span>
+        <li>
+            <p><a href="#" >13 de septiembre: Mircea Snegur, político moldavo (83)</a></p>
+        <li>
+            <p><a href="#" >12 de septiembre: Jean Boht, actriz y productora británica (91)</a></p>
+        <h7>Conmemoraciones y fiestas</h7>
+        <li>
+           <p><a href="#" >18 de septiembre: Día Nacional de Chile</a></p>
+        <li>
+            <p><a href="#" >16-22 de septiembre: Semana Europea de la Movilidad</a></p>
+        <li>
+            <p><a href="#" >16 de septiembre: Día Nacional de Papúa Nueva Guinea</a></p>
+        <li>
+          <p><a href="#" >16 de septiembre: Día Nacional de México</a></p>
+        <li>
+          <p><a href="#" >16 de septiembre: Día Internacional de la Preservación de la Capa de Ozono</a></p>
+        <li>
+          <p><a href="#" >15-17 de septiembre: Rosh Hashaná</a></p>
+          <p><a href="#" >
+            Véase también: Categoría:Actualidad, 2023, Categoría:2023</a></p>
+          </ul>
+          <button id="sinformato2" type="button">
+            <p class="fw-bolder">Otros eventos actuales</p>
+          </button> 
+        </aside>
+        <article2>
+          <p class="fw-light">Artículo bueno</p>
+          <p class="fw-bolder">Cueva de Altamira</p>
+          <img src="./imagenes/12_Vista_general_del_techo_de_polícromos.jpg" class="float-end" width="200"
+            height="200" />
+          <p class="fw-normal">
+            La cueva de Altamira es una cavidad natural en la roca en la que
+            se conserva uno de los ciclos pictóricos y artísticos más
+            importantes de la prehistoria. Forma parte del conjunto cueva de
+            Altamira y arte rupestre paleolítico de la cornisa cantábrica,
+            declarado Patrimonio de la Humanidad por la Unesco. Está situada
+            en el municipio español de Santillana del Mar, en Cantabria, a
+            unos dos kilómetros del centro urbano, en un prado del que tomó el
+            nombre.
+          </p>
+          <button id="sinformato" type="button">
+            <p class="fw-bolder">Leer</p>
+          </button>
+        </article2>
+        <article3>
+          <p class="fw-light">Efemerides</p>
+          <ul class="mi-lista">
+            <li>
+                <p><a href="#">1823 (hace 200 años): Fallece Abraham Louis Breguet, relojero y empresario suizo (n. 1747).</a></p>
+            </li>
+            <li>
+                <p><a href="#">1823 (hace 200 años): Nace Tekla Bądarzewska, compositora polaca (f. 1861).</a></p>
+            </li>
+            <span class="image-text">
+              <img src="./imagenes/efemerides.jpg" width="100"  style="float: right ; margin-left: 10px;"/>
+          </span>
+            <li>
+                <p><a href="#">1923 (hace 100 años): En Usulután (El Salvador), se funda el Club Deportivo Luis Ángel Firpo.</a></p>
+            </li>
+            <li>
+                <p><a href="#">1923 (hace 100 años): Nace Hank Williams, músico estadounidense (f. 1953; en la imagen).</a></p>
+            </li>
+            <li>
+                <p><a href="#">1948 (hace 75 años): Fallece Ruth Benedict, antropóloga estadounidense (n. 1887).</a></p>
+            </li>
+        </ul>
+        
+        
+            
+        <div style="display: flex; justify-content: flex-start;">
+          <button>
+              <p class="fw-bolder">17 de septiembre</p>
+          </button>
+          <button>
+              <p class="fw-bolder">18 de septiembre</p>
+          </button>
+          <button>
+              <p class="fw-bolder">19 de septiembre</p>
+          </button>
+      </div>
+      
+        </article3>
+        <article4>
+          <p class="fs-4">Recurso del día</p>
+          <img src="./imagenes/Moraine_Lake_17092005.jpg"  id="imagenLago" alt="..." />
+          <p class="text-center">Lago Moraine</p>
+          <p class="fw-normal">
+            Lago Moraine en el Parque Nacional Banff, en Alberta (Canadá).
+          </p>
+        </article4>
+        <article5>
+          <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  
+                  <h5 class="card-title">	Commons</h5>
+                  <span class="image-text">
+                    <img src="./imagenes/commons.jpg" width="30"  style="float: left ; margin-right: 10px;"/>
+                </span>
+                  <p class="card-text">Imágenes y multimedia
+                    
+                  </p>
+
+                  <h5 class="card-title">	Wikidata</h5>
+                  <span class="image-text">
+                    <img src="./imagenes/wikidata.jpg" width="30"  style="float: left ; margin-right: 10px;"/>
+                </span>
+                  <p class="card-text">Base de datos libre</p>
+                  <h5 class="card-title">	Wikinoticias</h5>
+                  <span class="image-text">
+                    <img src="./imagenes/wikinoticias.jpg" width="30"  style="float: left ; margin-right: 10px;"/>
+                </span>
+                  <p class="card-text">Noticias libres</p>
+                  <h5 class="card-title">Wikisource	</h5>
+                  <span class="image-text">
+                    <img src="./imagenes/wikisoruce.jpg" width="30"  style="float: left ; margin-right: 10px;"/>
+                </span>
+                  <p class="card-text">Biblioteca libre</p>
+                  <h5 class="card-title">	Wikiversidad</h5>
+                  <span class="image-text">
+                    <img src="./imagenes/wikiversidad.jpg" width="30"  style="float: left ; margin-right: 10px;"/>
+                </span>
+                  <p class="card-text">	
+                    Recursos de aprendizaje</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Wikcionario</h5>
+                  <span class="image-text">
+                    <img src="./imagenes/wikicionario" width="30"  style="float: left ; margin-right: 10px;"/>
+                </span>
+                  <p class="card-text">Diccionario libre</p>
+                  <h5 class="card-title">Wikilibros</h5>
+                  <span class="image-text">
+                    <img src="./imagenes/wikilibros.jpg" width="30"  style="float: left ; margin-right: 10px;"/>
+                </span>
+                  <p class="card-text">Libros de texto y manuales</p>
+                  <h5 class="card-title">Wikiquote</h5>
+                  <span class="image-text">
+                    <img src="./imagenes/wikiquote.jpg" width="30"  style="float: left ; margin-right: 10px;"/>
+                </span>
+                  <p class="card-text">Colección de citas</p>
+                  <h5 class="card-title">Wikispecies</h5>
+                  <span class="image-text">
+                    <img src="./imagenes/wikiespecies.jpg" width="30"  style="float: left ; margin-right: 10px;"/>
+                </span>
+                  <p class="card-text">Directorio de especies</p>
+                  <h5 class="card-title">	Wikiviajes</h5>
+                  <span class="image-text">
+                    <img src="./imagenes/wikiviajes.jpg" width="30"  style="float: left ; margin-right: 10px;"/>
+                </span>
+                  <p class="card-text">Guía de viajes</p>
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article5>
+        <article6>
+          <h4>Portales</h4>
+          <ul class="list-group-flush">
+            <li class="list-group-item">
+              Artes: Arquitectura – Cine – Danza – Literatura – Música –
+              Música clásica – Pintura – Teatro
+              <img src="./imagenes/mundo.jpg" alt="" class="float-end" width="30" />
+            </li>
+            <li class="list-group-item">
+              Ciencias sociales: Comunicación – Deporte – Derecho – Economía –
+              Filosofía – Lingüística – Psicología – Sociología
+              <img src="./imagenes/birrete.jpg" alt="" class="float-end" width="30" />
+            </li>
+            <li class="list-group-item">
+              Ciencias naturales: Astronomía – Biología – Botánica – Física –
+              Medicina – Matemática – Química
+              <img src="./imagenes/jimmy.jpg" alt="" class="float-end" width="30" />
+            </li>
+            <li class="list-group-item">
+              Geografía: África – América – Antártida – Asia – Europa –
+              Oceanía – Países/li>
+              <img src="./imagenes/mundoreal.jpg" alt="" class="float-end" width="30" </li>
+            <li class="list-group-item">
+              Historia: Prehistoria – Edad Antigua – Edad Media – Edad Moderna
+              – Edad Contemporánea
+              <img src="./imagenes/History2.jpg" alt="" class="float-end" width="30" </li>
+            <li class="list-group-item">
+              Política: Feminismo – LGBT – Marxismo – Nacionalismo –
+              Socialismo – Terrorismo
+              <img src="./imagenes/Vote3_final.jpg" alt="" class="float-end" width="30" </li>
+            <li class="list-group-item">
+              Religión: Ateísmo – Budismo – Cristianismo – Iglesia católica –
+              Islam – Judaísmo – Mitología
+              <img src="./imagenes/penultima.jpg" alt="" class="float-end" width="30" </li>
+            <li class="list-group-item">
+              Tecnologías: Biotecnología – Exploración espacial – Informática
+              – Ingeniería – Software libre – Videojuegos
+              <img src="./imagenes/ajustes.jpg" alt="" class="float-end" width="30" </li>
+          </ul>
+        </article6>
+        
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  
+  <footer>
+    <hr>
+    <p class="text-start">El texto está disponible bajo la Licencia Creative Commons Atribución Compartir Igual 4.0; pueden aplicarse cláusulas adicionales. Al usar este sitio, usted acepta nuestros términos de uso y nuestra política de privacidad.
+      Wikipedia® es una marca registrada de la Fundación Wikimedia, Inc., una organización sin ánimo de lucro.</p>
+      <br>
+      <a href="#" class="text-decoration-none" id="finalito">Politica de privacidad </a>
+      <a href="#" class="text-decoration-none" id="finalito">Acerca de Wikipedia    </a>
+      <a href="#" class="text-decoration-none" id="finalito">Limitación de responsabilidad</a>
+      <a href="#" class="text-decoration-none" id="finalito">Código de conducta</a>
+      <a href="#" class="text-decoration-none" id="finalito">Versión para móviles</a>
+      <a href="#" class="text-decoration-none" id="finalito">Desarrolladores</a>
+      <a href="#" class="text-decoration-none" id="finalito">Estadísticas</a>
+      <a href="#" class="text-decoration-none" id="finalito">Declaración de cookies</a>
+      
+      <div style="display: flex; justify-content: flex-end;">
+        <img src="./imagenes/wikimedia-button.png" class="rounded" alt="...">
+        <img src="./imagenes/poweredby_mediawiki_88x31.png" class="rounded" alt="...">
+    </div>
+    
+      
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
